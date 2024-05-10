@@ -13,14 +13,17 @@ class PageController extends Controller
         return view('home');
     }
 
-    public function nuovaPagina()
+    public function moviesTitle()
     {
-        return view('nuova-pagina');
+        // Order By, per ordinare le card in base al titolo
+        $movies = Movie::orderBy('title')->get();
+        return view('movies-title', compact('movies'));
     }
 
     public function movies()
     {
         $movies = Movie::all();
+
         return view('movies', compact('movies'));
     }
 }

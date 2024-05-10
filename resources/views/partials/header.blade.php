@@ -1,7 +1,7 @@
 <header>
     <h1>Header</h1>
 
-    <a href="{{ route('home') }}">Home</a>
-    <a href="{{ route('nuova-pagina') }}">Nuova Pagina</a>
-    <a href="{{ route('movies') }}">Movies</a>
+    <a class="mx-4" href="{{ route('home') }}">Home</a>
+    <a class="mx-4" href="{{ route('movies-title') }}">Film in ordine di titolo</a>
+    <a class="mx-4" href="{{ route('movies') }}">Movies</a>
 </header>
