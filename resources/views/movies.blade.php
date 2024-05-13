@@ -19,3 +19,8 @@
         </div>
     </div>
 @endsection
+
+
+@section('title')
+    Movies
+@endsection
